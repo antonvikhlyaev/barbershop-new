@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Наши работы</title>
+    <title>Наши акции</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -23,11 +23,11 @@
             <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a href="discounts.html">Акции</a>
+            <li class="main-nav__item main-nav__item--active">
+              <a>Акции</a>
             </li>
-            <li class="main-nav__item  main-nav__item--active">
-              <a>Наши работы</a>
+            <li class="main-nav__item">
+              <a href="photo.html">Наши работы</a>
             </li>
             <li class="main-nav__item">
               <a href="catalog.html">Магазин</a>
@@ -42,135 +42,93 @@
         </div>
       </nav>
     </header>
-    <section class="works">
-      <div class="works__wrapper">
-        <h2 class="works__title">Наши работы</h2>
-        <a class="btn  works__return  works__return--show" href="index.html">На главную</a>
-        <ul class="works__list">
-          <li class="works-item  works-item--work-of-month">
-            <div class="works-item__img-wrapper">
+    <section class="discounts-page">
+      <div class="discounts-page__wrapper">
+        <h2 class="discounts-page__title">Наши акции</h2>
+        <a class="btn discounts-page__return  discounts-page__return--show" href="index.html">На главную</a>
+        <ul class="discounts-page__list">
+          <li class="discounts-item  discounts-item--work-of-month">
+            <div class="discounts-item__img-wrapper">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">
-                <img class="works-item__img" src="img/photo-1-mobile.jpg" alt="Пример нашей работы">
+                <img class="discounts-item__img" src="img/photo-1-mobile.jpg" alt="Пример нашей работы">
               </picture>
             </div>
-            <div class="works-item__review">
-              <div class="works-item__review-text">
-                <h3 class="works-item__title">Лжепётр Мчиславский</h3>
-                <blockquote class="works-item__blockquote">
-                  Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
+            <div class="discounts-item__review">
+              <div class="discounts-item__review-text">
+                <h3 class="discounts-item__title">Каждая пятая стрижка - бесплатно!</h3>
+                <blockquote class="discounts-item__blockquote">
+                  Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого! Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого! Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого! Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого! Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого! Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
                 </blockquote>
               </div>
-              <ul class="works-item__parameter-list">
-                <li class="works-item__parameter-item  works-item__parameter-item--haircut">Стрижка</li>
-                <li class="works-item__parameter-item  works-item__parameter-item--shaving">Бритьё</li>
-                <li class="works-item__parameter-item  works-item__parameter-item--mustache">Усы</li>
+              <ul class="discounts-item__parameter-list">
+                <li class="discounts-item__parameter-item  discounts-item__parameter-item--haircut">Стрижка</li>
               </ul>
             </div>
           </li>
-          <li class="works-item">
-            <div class="works-item__img-wrapper">
+          <li class="discounts-item">
+            <div class="discounts-item__img-wrapper">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">
-                <img class="works-item__img" src="img/photo-2-mobile.jpg" alt="Пример нашей работы">
+                <img class="discounts-item__img" src="img/photo-2-mobile.jpg" alt="Пример нашей работы">
               </picture>
             </div>
-            <div class="works-item__review">
-              <div class="works-item__review-text">
-                <h3 class="works-item__title">Саша Мальцев</h3>
-                <blockquote class="works-item__blockquote">
-                  Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
+            <div class="discounts-item__review">
+              <div class="discounts-item__review-text">
+                <h3 class="discounts-item__title">Приведи другана - получи скидку!</h3>
+                <blockquote class="discounts-item__blockquote">
+                  Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? Правильно! Никто.
                 </blockquote>
               </div>
-              <ul class="works-item__parameter-list">
-                <li class="works-item__parameter-item  works-item__parameter-item--haircut">Стрижка</li>
+              <ul class="discounts-item__parameter-list">
+                <li class="discounts-item__parameter-item  discounts-item__parameter-item--haircut">Стрижка</li>
               </ul>
             </div>
           </li>
-          <li class="works-item">
-            <div class="works-item__img-wrapper">
+          <li class="discounts-item">
+            <div class="discounts-item__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">
+                <img class="discounts-item__img" src="img/photo-2-mobile.jpg" alt="Пример нашей работы">
+              </picture>
+            </div>
+            <div class="discounts-item__review">
+              <div class="discounts-item__review-text">
+                <h3 class="discounts-item__title">Приведи другана - получи скидку!</h3>
+                <blockquote class="discounts-item__blockquote">
+                  Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? Правильно! Никто.
+                </blockquote>
+              </div>
+              <ul class="discounts-item__parameter-list">
+                <li class="discounts-item__parameter-item  discounts-item__parameter-item--haircut">Стрижка</li>
+              </ul>
+            </div>
+          </li>
+          <li class="discounts-item">
+            <div class="discounts-item__img-wrapper">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg">
-                <img class="works-item__img" src="img/photo-3-mobile.jpg" alt="Пример нашей работы">
+                <img class="discounts-item__img" src="img/photo-3-mobile.jpg" alt="Пример нашей работы">
               </picture>
             </div>
-            <div class="works-item__review">
-              <div class="works-item__review-text">
-                <h3 class="works-item__title">Владимир Иваныч</h3>
-                <blockquote class="works-item__blockquote">
-                  К зимнему сезону — готов!
+            <div class="discounts-item__review">
+              <div class="discounts-item__review-text">
+                <h3 class="discounts-item__title">Запишись заранее и получи бонус!</h3>
+                <blockquote class="discounts-item__blockquote">
+                  К зимнему сезону — готов! Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого! Где я только не стригся, но так как делаете это вы — не умеет никто другой! К зимнему сезону — готов! К зимнему сезону — готов! К зимнему сезону — готов!
                 </blockquote>
               </div>
-              <ul class="works-item__parameter-list">
-                <li class="works-item__parameter-item  works-item__parameter-item--shaving">Борода</li>
-                <li class="works-item__parameter-item  works-item__parameter-item--mustache">Усы</li>
-              </ul>
-            </div>
-          </li>
-          <li class="works-item">
-            <div class="works-item__img-wrapper">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg">
-                <img class="works-item__img" src="img/photo-4-mobile.jpg" alt="Пример нашей работы">
-              </picture>
-            </div>
-            <div class="works-item__review">
-              <div class="works-item__review-text">
-                <h3 class="works-item__title">Винстон Синий</h3>
-                <blockquote class="works-item__blockquote">
-                  Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!
-                </blockquote>
-              </div>
-              <ul class="works-item__parameter-list">
-                <li class="works-item__parameter-item  works-item__parameter-item--haircut">Стрижка</li>
+              <ul class="discounts-item__parameter-list">
+                <li class="discounts-item__parameter-item  discounts-item__parameter-item--shaving">Борода</li>
+                <li class="discounts-item__parameter-item  discounts-item__parameter-item--mustache">Усы</li>
               </ul>
             </div>
           </li>
         </ul>
-      </div>
-    </section>
-    <section class="price">
-      <div class="price__wrapper">
-        <h2 class="price__header">Прейскурант</h1>
-        <div class="price__columns">
-          <table class="price__table">
-            <tr>
-              <td class="col-1">1</td>
-              <td class="col-2">Классическая стрижка</td>
-              <td class="col-3">(с мытьём головы)</td>
-              <td class="col-4">1 500 руб.</td>
-            </tr>
-            <tr>
-              <td class="col-1">2</td>
-              <td class="col-2">Современный вариант</td>
-              <td class="col-3">(с мытьём головы)</td>
-              <td class="col-4">1 500 руб.</td>
-            </tr>
-            <tr>
-              <td class="col-1">3</td>
-              <td class="col-2">Индивидуальный подход</td>
-              <td class="col-3">(с мытьём головы)</td>
-              <td class="col-4">2 000 руб.</td>
-            </tr>
-            <tr>
-              <td class="col-1">4</td>
-              <td class="col-2">Бритьё бороды</td>
-              <td class="col-3">(без мытья)</td>
-              <td class="col-4">500 руб.</td>
-            </tr>
-            <tr>
-              <td class="col-1">5</td>
-              <td class="col-2">Бритьё бороды</td>
-              <td class="col-3">(с мытьём головы)</td>
-              <td class="col-4">1 000 руб.</td>
-            </tr>
-          </table>
-          <p class="price__discount">С 10:00 до 14:00 скидка 20%</p>
-        </div>
       </div>
     </section>
     <footer class="page-footer">

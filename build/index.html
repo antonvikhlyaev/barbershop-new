@@ -21,13 +21,24 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Наши работы</a></li>
-            <li class="main-nav__item"><a href="form.html">Записаться</a></li>
-            <li class="main-nav__item"><a href="#">Контакты</a></li>
-          </ul>
-          <ul class="main-nav__user-items">
-            <li class="main-nav__user-item"><a class="main-nav__user-login" href="#" title="Войти">Вход</a></li>
+            <li class="main-nav__item  main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="discounts.html">Акции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Наши работы</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Записаться</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Контакты</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -86,54 +97,48 @@
         </div>
       </div>
     </section>
-    <section class="news">
-      <div class="news__wrapper">
-        <h2 class="news__title">Новости и акции</h2>
-        <ul class="news__items">
-          <li class="news__item">
-            <a class="news__item-wrapper" href="#">
-              <time class="news__date" datetime="2015-09-29"><b>29</b> сент</time>
-              <p>Нам наконец завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
-            </a>
+    <section class="discounts">
+      <div class="discounts__wrapper">
+        <h2 class="discounts__title">Акции</h2>
+        <ul class="discounts__items">
+          <li class="discounts__item">
+            <time class="discounts__date" datetime="2015-09-29"><b>29</b> сент</time>
+            <p>Нам наконец завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
           </li>
-          <li class="news__item">
-            <a class="news__item-wrapper" href="#">
-              <time class="news__date" datetime="2015-09-19"><b>19</b> сент</time>
-              <p>В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!</p>
-            </a>
+          <li class="discounts__item">
+            <time class="discounts__date" datetime="2015-09-19"><b>19</b> сент</time>
+            <p>В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!</p>
           </li>
-          <li class="news__item  news__item--show">
-            <a class="news__item-wrapper" href="#">
-              <time class="news__date" datetime="2015-09-9"><b>9</b> сент</time>
-              <p>Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
-            </a>
+          <li class="discounts__item discounts__item--show">
+            <time class="discounts__date" datetime="2015-09-9"><b>9</b> сент</time>
+            <p>Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
           </li>
         </ul>
-        <a class="news__to-all  btn" href="#">Показать все</a>
+        <a class="discounts__to-all btn" href="discounts.html">Показать все</a>
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__wrapper  slider">
+      <div class="reviews__wrapper slider">
         <h2 class="reviews__title">Отзывы о нас</h2>
         <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
         <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
         <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
         <div class="reviews__items">
-          <blockquote class="reviews__item  slider__item">
+          <blockquote class="reviews__item slider__item">
             <div class="reviews__author-photo">
               <img src="img/travis.jpg" alt="Фото Трэвиса Баркера">
             </div>
             <cite class="reviews__author-name">Трэвис Баркер</cite>
             <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
           </blockquote>
-          <blockquote class="reviews__item  slider__item">
+          <blockquote class="reviews__item slider__item">
             <div class="reviews__author-photo">
               <img src="img/diesel.jpg" alt="Фото Трэвиса Баркера">
             </div>
             <cite class="reviews__author-name">Вин Дроссель</cite>
             <p>Спасибо за шикарную стрижку!</p>
           </blockquote>
-          <blockquote class="reviews__item  slider__item">
+          <blockquote class="reviews__item slider__item">
             <div class="reviews__author-photo">
               <img src="img/travis.jpg" alt="Фото Трэвиса Баркера">
             </div>
@@ -161,9 +166,9 @@
         <p class="page-footer__social">
           <span class="page-footer__social-title">Давайте дружить!</span>
           <span class="social-links">
-            <a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            <a class="social-link  social-link--ig" href="https://instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social-link social-link--vk" href="#">Мы в Вконтакте</a>
+            <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
+            <a class="social-link social-link--ig" href="#">Мы в Инстаграме</a>
           </span>
         </p>
         <p class="page-footer__copyright">
@@ -188,7 +193,6 @@
         <button class="modal-login__enter" type="submit">Войти <span>в личный кабинет</span></button>
         <button class="modal-login__close  btn" type="button">Закрыть</button>
       </form>
-
     </section>
     <script>
       var navMain = document.querySelector('.main-nav');

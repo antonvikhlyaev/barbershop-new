@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Набор для путешествий «Baxter of California»</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика</h1>
+    <div class="page-header__logo  page-header__logo--inner-page">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+      </picture>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="discounts.html">Акции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Наши работы</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Записаться</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="product">
+    <div class="product__wrapper">
+      <h2 class="product__title">Набор для путешествий «Baxter of California»</h2>
+      <a class="btn product__return product__return--show" href="catalog.html">В каталог</a>
+      <div class="product__columns">
+        <section class="product__photos">
+          <h3 class="visually-hidden">Изображения товара</h3>
+          <p class="product__photo product__photo--full">
+            <img src="img/product-big.jpg" alt="Фото всего набора">
+          </p>
+          <ul class="product__photos-list">
+            <li class="product__photo product__photo--small">
+              <img src="img/product-small-1.jpg" alt="Фото в анфас">
+            </li>
+            <li class="product__photo product__photo--small">
+              <img src="img/product-small-2.jpg" alt="Фото в профиль">
+            </li>
+            <li class="product__photo product__photo--small">
+              <img src="img/product-small-3.jpg" alt="Фото отдельной части">
+            </li>
+          </ul>
+        </section>
+        <section class="product__info">
+          <h2 class="visually-hidden">Описание товара</h2>
+          <div class="product__description">
+            <p class="product__availability">Есть в наличии</p>
+            <p class="product__article">Артикул: dexter-ae</p>
+          </div>
+          <p class="product__text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий
+            крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+          <p class="product__price">
+            <b>2 900 ₽</b>
+            <a class="btn product__buy-btn" href="#">Купить</a>
+          </p>
+          <h3 class="product__info-title">В набор входят:</h3>
+          <ul class="product__list">
+            <li class="product__item">Средство для умывания (50 мл)</li>
+            <li class="product__item">Увлажняющий крем (50 мл)</li>
+            <li class="product__item">Крем для бритья (50 мл)</li>
+            <li class="product__item">Крем после бритья, шампунь (50 мл)</li>
+            <li class="product__item">Удобная кожаная косметичка</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__contacts">
+        <b>Барбершоп Бородинский</b><br>
+        г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+        <a class="btn" href="tel:+78125556666"><span class="page-footer__phone-show">Тел.:</span> +7 (812) 555-66-66</a>
+      </p>
+      <p class="page-footer__social">
+        <span class="page-footer__social-title">Давайте дружить!</span>
+        <span class="social-links">
+          <a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social-link  social-link--ig" href="https://instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </span>
+      </p>
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </p>
+    </div>
+  </footer>
+  <section class="modal-buy">
+    <h2 class="modal-buy__title">Отложить товар</h2>
+    <p>Оставьте своё имя и телефон, чтобы отложить товар</p>
+    <form class="modal-buy__form" action="#" method="POST">
+      <label for="name">
+        <input type="text" id="name" placeholder="Имя">
+      </label>
+      <label for="phone">
+        <input type="text" id="phone" placeholder="Телефон">
+      </label>
+      <button class="modal-buy__submit" type="submit">Отложить товар</button>
+      <button class="modal-buy__close btn" type="button">Закрыть</button>
+    </form>
+  </section>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+    var link = document.querySelector('.product__buy-btn');
+    var popup = document.querySelector(".modal-buy");
+    var close = popup.querySelector(".modal-buy__close");
+    var form = popup.querySelector("form");
+    var name = popup.querySelector("[name=name]");
+    var phone = popup.querySelector("[name=phone]");
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("modal-buy--show");
+    });
+
+    close.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.remove("modal-buy--show");
+    });
+  </script>
+</body>
+
+</html>

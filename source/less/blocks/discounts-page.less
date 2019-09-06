@@ -1,0 +1,123 @@
+.discounts-page {
+  position: relative;
+
+  background-color: @bg-lightgrey;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -35px;
+    left: 0;
+    z-index: 2;
+
+    height: 35px;
+
+    background-image: url("../img/corner-light.svg");
+    transform: rotate(180deg);
+  }
+}
+
+.discounts-page__wrapper {
+  padding: 28px 20px 35px;
+
+  .container-fluid();
+}
+
+.discounts-page__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.discounts-page__return {
+  display: none;
+}
+
+.discounts-page__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@media @tablet-widths {
+  .discounts-page {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -41px;
+      right: 0;
+      left: 0;
+
+      height: 42px;
+
+      background-image: url("../img/corner-double.svg");
+      background-repeat: no-repeat;
+    }
+    &::after {
+      bottom: -42px;
+
+      height: 42px;
+    }
+  }
+
+  .discounts-page__wrapper {
+    position: relative;
+
+    padding: 56px 0 76px;
+  }
+
+  .discounts-page__title {
+    margin-bottom: 74px;
+
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .discounts-page__return--show {
+    position: absolute;
+    top: 53px;
+    right: 0;
+
+    display: block;
+    width: 160px;
+    padding: 10px 35px 11px;
+
+    outline: none;
+  }
+}
+
+@media @desktop-widths {
+  .discounts-page {
+    &::before {
+      top: -65px;
+
+      height: 65px;
+    }
+    &::after {
+      display: none;
+    }
+  }
+
+  .discounts-page__wrapper {
+    padding-bottom: 67px;
+  }
+
+  .discounts-page__title {
+    font-size: 40px;
+  }
+
+  .discounts-page__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
