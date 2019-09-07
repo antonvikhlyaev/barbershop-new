@@ -148,12 +148,12 @@
           <button class="reviews__prev" type="button">Предыдущий отзыв</button>
           <button class="reviews__next" type="button">Следующий отзыв</button>
         </div>
-        <div class="reviews__toggles  slider__toggles">
-          <label class="reviews__toggle  slider__toggle" for="reviews-input-1">1</label>
-          <label class="reviews__toggle  slider__toggle" for="reviews-input-2">2</label>
-          <label class="reviews__toggle  slider__toggle" for="reviews-input-3">3</label>
+        <div class="reviews__toggles slider__toggles">
+          <label class="reviews__toggle slider__toggle" for="reviews-input-1">1</label>
+          <label class="reviews__toggle slider__toggle" for="reviews-input-2">2</label>
+          <label class="reviews__toggle slider__toggle" for="reviews-input-3">3</label>
         </div>
-        <a class="reviews__write  btn" href="#">Оставить свой</a>
+        <a class="reviews__write btn" href="#">Оставить свой</a>
       </div>
     </section>
     <footer class="page-footer">
@@ -177,33 +177,31 @@
         </p>
       </div>
     </footer>
-    <section class="modal-login">
-      <h2 class="modal-login__title">Личный кабинет</h2>
-      <p>Введите свой логин и пароль, чтобы войти</p>
-      <form class="modal-login__form" action="#" method="POST">
-        <label for="login">
-          <input type="text" id="login" placeholder="Логин">
-        </label>
-        <label for="password">
-          <input type="text" id="password" placeholder="Пароль">
-        </label>
-        <input type="checkbox" name="remember" id="remember">
-        <label for="remember"><span></span>Запомнить меня</label>
-        <a href="#">Я забыл пароль!</a>
-        <button class="modal-login__enter" type="submit">Войти <span>в личный кабинет</span></button>
-        <button class="modal-login__close  btn" type="button">Закрыть</button>
+    <section class="modal-review">
+      <h2 class="modal-review__title">Оставить отзыв</h2>
+      <p class="modal-review__text">Оставьте отзыв и получите постоянную скидку 10%</p>
+      <form class="modal-review__form" action="#" method="POST">
+        <div class="modal-review__field modal-review__field--fullname">
+          <label for="surname"><span class="visually-hidden">Фамилия</span><input type="text" id="surname" name="surname" placeholder="Фамилия"></label>
+          <label for="name"><span class="visually-hidden">Имя</span><input type="text" id="name" name="name" placeholder="Имя"></label>
+        </div>
+        <div class="modal-review__field modal-review__field--contacts">
+          <label for="phone"><input type="text" name="phone" placeholder="Контактный телефон"></label>
+        </div>
+        <div class="modal-review__field modal-review__field--comment">
+          <textarea name="comment" placeholder="Напишите отзыв"></textarea>
+        </div>
+        <button class="modal-review__apply" type="button">Отправить отзыв</button>
+        <button class="modal-review__close btn" type="button">Закрыть</button>
       </form>
     </section>
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
-      var link = document.querySelector('.main-nav__user-login');
-      var popup = document.querySelector(".modal-login");
-      var close = popup.querySelector(".modal-login__close");
-      var form = popup.querySelector("form");
-      var login = popup.querySelector("[name=login]");
-      var password = popup.querySelector("[name=password]");
-      var storage = localStorage.getItem("login")
+      var link = document.querySelector('.reviews__write');
+      var popup = document.querySelector('.modal-review');
+      var close = popup.querySelector('.modal-review__close');
+      var form = popup.querySelector('form');
 
       navMain.classList.remove('main-nav--nojs');
 
@@ -219,12 +217,12 @@
 
       link.addEventListener("click", function(event) {
         event.preventDefault();
-        popup.classList.add("modal-login--show");
+        popup.classList.add("modal-review--show");
       });
 
       close.addEventListener("click", function(event) {
         event.preventDefault();
-        popup.classList.remove("modal-login--show");
+        popup.classList.remove("modal-review--show");
        });
     </script>
   </body>

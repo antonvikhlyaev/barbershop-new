@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Наши работы</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -33,7 +34,7 @@
               <a href="catalog.html">Магазин</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Записаться</a>
+              <a href="#">Записаться</a>
             </li>
             <li class="main-nav__item">
               <a href="#">Контакты</a>
@@ -194,23 +195,6 @@
           </p>
         </div>
       </footer>
-      <section class="modal-login">
-        <h2 class="modal-login__title">Личный кабинет</h2>
-        <p>Введите свой логин и пароль, чтобы войти</p>
-        <form class="modal-login__form" action="#" method="POST">
-          <label for="login">
-            <input type="text" id="login" placeholder="Логин">
-          </label>
-          <label for="password">
-            <input type="text" id="password" placeholder="Пароль">
-          </label>
-          <input type="checkbox" name="remember" id="remember">
-          <label for="remember"><span></span>Запомнить меня</label>
-          <a href="#">Я забыл пароль!</a>
-          <button class="modal-login__enter" type="submit">Войти <span>в личный кабинет</span></button>
-          <button class="modal-login__close  btn" type="button">Закрыть</button>
-        </form>
-      </section>
       <script>
         var navMain = document.querySelector('.main-nav');
         var navToggle = document.querySelector('.main-nav__toggle');
@@ -233,16 +217,6 @@
             navMain.classList.remove('main-nav--opened');
           }
         });
-
-        link.addEventListener("click", function(event) {
-          event.preventDefault();
-          popup.classList.add("modal-login--show");
-        });
-
-        close.addEventListener("click", function(event) {
-          event.preventDefault();
-          popup.classList.remove("modal-login--show");
-         });
       </script>
   </body>
 </html>
